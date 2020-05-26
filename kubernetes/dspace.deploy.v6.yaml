@@ -61,7 +61,7 @@ spec:
         hostPath:
           path: "/tmp/vols/pgdata"
       containers:
-      - image: dspace/dspace-postgres-pgcrypto
+      - image: celosop/dspace-postgres-pgcrypto
         name: dspacedb
         ports:
         - containerPort: 5432
@@ -136,7 +136,7 @@ spec:
         hostPath:
           path: "/tmp/vols/solr-statistics"
       containers:
-      - image: dspace/dspace:dspace-6_x-jdk8-test
+      - image: celosop/dspace:dspace-6_x-jdk8-test
         name: dspace
         ports:
         - containerPort: 8080
