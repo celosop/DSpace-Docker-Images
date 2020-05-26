@@ -55,7 +55,7 @@ spec:
           name: ingest-script
       containers:
       - name: dspace-cli
-        image: dspace/dspace-cli:dspace-6_x
+        image: celosop/dspace-cli:dspace-6_x
         command: [
           "/bin/sh",
           "/tmp/ingest.sh"
